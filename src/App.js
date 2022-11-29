@@ -1,29 +1,13 @@
-import { Button, Card, Container, Nav, Navbar } from "react-bootstrap";
+
 import "./App.css";
 import MianSection from "./Component/MianSection";
+import TopBar from "./Component/TopBar";
 import pic from "./pic.png";
 
 function App() {
   return (
     <div className="App ">
-      <Navbar className="nav">
-        <Container>
-          <Navbar className={"logo"} href="#home">
-            MAG
-          </Navbar>
-          <Nav className={"lists"}>
-            <Nav className={"list home"} href="#home">
-              Home
-            </Nav>
-            <Nav className={"list"} href="#features">
-              Skills
-            </Nav>
-            <Nav className={"list"} href="#pricing">
-              About
-            </Nav>
-          </Nav>
-        </Container>
-      </Navbar>
+      <TopBar/>
       <body className={"main"}>
         <main className="main-sec">
           <div className="par">
